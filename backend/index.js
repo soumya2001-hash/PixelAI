@@ -19,11 +19,13 @@ app.get('/', async (req,res) => {
     res.send('Hello from Stable Diffusion');
 })
 
+const port = process.env.PORT || 4000;
+
 const startServer = async () => {
     try {
         connectDB(process.env.MONGODB_URL);
-        app.listen(8080, () => 
-            console.log('Server has started on port 8080')
+        app.listen(port, () => 
+            console.log('Server has started on port '+port)
         )
     } catch (error) {
         console.log(error);
