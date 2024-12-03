@@ -16,6 +16,8 @@ Database: MongoDB
 AI: Stable Diffusion API for image generation  
 Hosting: Netlify  
 
+Visit at: https://pixel-aii.netlify.app/   
+
 Installation:   
 Pre-requisites:  
 Node.js installed on your machine  
