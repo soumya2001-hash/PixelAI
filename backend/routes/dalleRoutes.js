@@ -50,7 +50,7 @@ router.route('/').post(async (req, res) => {
         })
         .catch ((error) => {
             console.log("Error:", error.response ? error.response.data : error.message);
-            res.status(500).send(error?.response?.data?.error?.message || "An error occurred with the DALL-E API request.");
+            res.status(500).send(error?.response?.data?.error?.message || "An error occurred with the Stable Diffusion API request.");
         }
         )
         
